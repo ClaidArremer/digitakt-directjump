@@ -1,0 +1,52 @@
+{
+ "id": "directjump-dt",
+ "version": "1.0",
+ "title": "directjump-dt",
+ "category": "Sequencer",
+ "license": "GPL-2.0-or-later",
+ "author": "Robbie",
+ "description": "Direct Jump and Start on Bar for the Digitakt mk1 (the Digitone version's port). SETTINGS > DIRECT JUMP, ticked: a pattern picked while the sequencer plays takes over on the next step, legato, from the same place in the bar (per-track scale mode included, all 16 tracks). SETTINGS > START ON BAR, ticked: with DIRECT JUMP unticked a pick starts its pattern from the first step on the next bar line of the Digitakt's song position, so it never loses a beat; and pressing the playing pattern's key relaunches it from its first step on the next beat, as a Perkons does. DIGISNAKE-DT 0.3 relaunches its paths with a start. Unticked, the stock behaviour. Chains play on as stock and song mode is left alone. The Digitakt's core keeps no project data: both settings are ticked at power-on. For OS 1.54; needs core (the Digitakt mk1's).",
+ "device": "digitakt-mk1",
+ "os": "1.54",
+ "sources": [
+  "djsites.s",
+  "directjump.c"
+ ],
+ "defsym": {
+  "DJ_ARMED_RET": "0x40071278",
+  "STR_CTOR": "0x4017af20",
+  "INVALIDATE": "0x400c9a3a",
+  "BLIT": "0x400c2b88",
+  "CHECKBOXES": "0x421f8a3c"
+ },
+ "sites": [
+  {
+   "addr": "0x40070e26",
+   "stock": "73794199ed4c",
+   "op": "jsr",
+   "target": "dj_site_peek"
+  },
+  {
+   "addr": "0x4007124e",
+   "stock": "33c44199ecc2",
+   "op": "jsr",
+   "target": "dj_site_switch"
+  }
+ ],
+ "subscribe": [
+  {
+   "event": "ev_settings",
+   "fn": "dj_settings",
+   "order": 60
+  }
+ ],
+ "resources": {
+  "names": [
+   "settings:DIRECT JUMP",
+   "settings:START ON BAR"
+  ]
+ },
+ "requires": [
+  "core"
+ ]
+}

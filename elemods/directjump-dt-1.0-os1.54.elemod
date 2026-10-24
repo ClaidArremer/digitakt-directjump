@@ -1,0 +1,667 @@
+{
+ "elemod": 2,
+ "id": "directjump-dt",
+ "version": "1.0",
+ "title": "directjump-dt",
+ "description": "Direct Jump and Start on Bar for the Digitakt mk1 (the Digitone version's port). SETTINGS > DIRECT JUMP, ticked: a pattern picked while the sequencer plays takes over on the next step, legato, from the same place in the bar (per-track scale mode included, all 16 tracks). SETTINGS > START ON BAR, ticked: with DIRECT JUMP unticked a pick starts its pattern from the first step on the next bar line of the Digitakt's song position, so it never loses a beat; and pressing the playing pattern's key relaunches it from its first step on the next beat, as a Perkons does. DIGISNAKE-DT 0.3 relaunches its paths with a start. Unticked, the stock behaviour. Chains play on as stock and song mode is left alone. The Digitakt's core keeps no project data: both settings are ticked at power-on. For OS 1.54; needs core (the Digitakt mk1's).",
+ "category": "Sequencer",
+ "author": "Robbie",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.54",
+  "syx_sha256": "f78ba80fa7b1da5fb0e1ff61ad61e9e71aafe79f4364fc49679f3651353e3cf6",
+  "section3_sha256": "5c58bf9e3949ef09977c5fc007a61e8d026931f67f1621238379dfb8ee4d31a2",
+  "section3_len": 2479680
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1692,
+   "parts": [
+    [
+     "hex",
+     "73794199ed4c"
+    ],
+    [
+     "stock",
+     "0x40001540",
+     8
+    ],
+    [
+     "hex",
+     "486f00702f032f004eb9000000004fef000c4a80"
+    ],
+    [
+     "stock",
+     "0x4000155c",
+     8
+    ],
+    [
+     "hex",
+     "67062ebc40071278"
+    ],
+    [
+     "stock",
+     "0x400004b0",
+     8
+    ],
+    [
+     "hex",
+     "03032f044eb900000000588f2800"
+    ],
+    [
+     "stock",
+     "0x4000155c",
+     8
+    ],
+    [
+     "hex",
+     "33c44199ecc24e75487a01862f2f00084eb900000000508f487a01862f2f00084eb900000000"
+    ],
+    [
+     "stock",
+     "0x40043ed4",
+     14
+    ],
+    [
+     "hex",
+     "487a017a"
+    ],
+    [
+     "stock",
+     "0x40007484",
+     10
+    ],
+    [
+     "stock",
+     "0x400286a8",
+     14
+    ],
+    [
+     "hex",
+     "206f0004205070004a390000000057c002800000000113c000000000"
+    ],
+    [
+     "stock",
+     "0x4003faec",
+     14
+    ],
+    [
+     "hex",
+     "206f00042050202f000c671c5ec002800000000113c000000000"
+    ],
+    [
+     "stock",
+     "0x4003faec",
+     14
+    ],
+    [
+     "hex",
+     "4e7570004a39000000006702701cd0b9421f8a3c222f000c"
+    ],
+    [
+     "stock",
+     "0x4005f8e2",
+     8
+    ],
+    [
+     "stock",
+     "0x4006333e",
+     12
+    ],
+    [
+     "stock",
+     "0x4006334c",
+     8
+    ],
+    [
+     "stock",
+     "0x400b9b1a",
+     8
+    ],
+    [
+     "stock",
+     "0x40028690",
+     8
+    ],
+    [
+     "hex",
+     "487a00d4"
+    ],
+    [
+     "stock",
+     "0x40007484",
+     10
+    ],
+    [
+     "stock",
+     "0x400286a8",
+     14
+    ],
+    [
+     "hex",
+     "206f0004205070004a390000000057c002800000000113c000000000"
+    ],
+    [
+     "stock",
+     "0x4003faec",
+     14
+    ],
+    [
+     "hex",
+     "206f00042050202f000c671c5ec002800000000113c000000000"
+    ],
+    [
+     "stock",
+     "0x4003faec",
+     14
+    ],
+    [
+     "hex",
+     "4e7570004a39000000006702701cd0b9421f8a3c222f000c"
+    ],
+    [
+     "stock",
+     "0x4005f8e2",
+     8
+    ],
+    [
+     "stock",
+     "0x4006333e",
+     12
+    ],
+    [
+     "stock",
+     "0x4006334c",
+     8
+    ],
+    [
+     "hex",
+     "4ef9400c2b8800000000000000000000000000000000000000000000000000000000000000000000444952454354204a554d50005354415254204f4e204241520000"
+    ],
+    [
+     "stock",
+     "0x40037b7a",
+     8
+    ],
+    [
+     "hex",
+     "041c22394199ec384aaf0034660001ae4aaf0030670001a6b2af0030670a103900000000660001a21039000000006700018c700220794199ed58b1fc401f69c86600017a20794199ed5cb1fc401f69c86600016a207941992ba84a886c00015e24394199ed442f4200204a826600014e226f003877a9001453834a836700013e7602b680670000d830794199ebb432794199ed4c760179c8754920445288b6826c00018073c924084c4120032043222f003006810001ec54244178011212226f0030d3fc0001ec55141173817782e1898283b881640824084c41200320437802b88067042f480020206f003876ff242f002078013228000c2268000423c94199ec4833c14199ed4a222f00303468000a33ca4199ed4e23c14199ec3c2228001023c14199ed5423c24199ec5c23c34199ec602f2f00302f4000164eb94006e6e0588f23c44199ed444cd7041c202f001213c000000000"
+    ],
+    [
+     "stock",
+     "0x400e825c",
+     8
+    ],
+    [
+     "hex",
+     "18394199ec70206f0030d1fc0001ec591f50001c207c4018ed20750477af001c22702c0053834a836746206f0030d1fc0001ec5a16103043b2af0030670000bc74602f42001c4a896f147708207c4018ed2020703c002f4800244a886e2a"
+    ],
+    [
+     "stock",
+     "0x4003137a",
+     8
+    ],
+    [
+     "hex",
+     "002c4e7570016000fe68b2af00306700008e4a896fe2740676602f4200242f43001c20794199ec68760624084c03280024794199ec6c41f228ff242f001cd1c9d1ef001cd1ef002428084c424003b6896500fe724cd7041c4fef002c4e75224106810001ec55d3fc0001ec541f51001c244178011212758173af001ce18982827741b8836c00fe6424084c41200320436000fe5878182f44001c6000ff444a896f00ff56741876062f42001c780620794199ec6824084c03280024794199ec6c2f44002441f228ff242f001cd1c9d1ef001cd1ef002428084c424003b6896500fde46000ff7010390000"
+    ],
+    [
+     "stock",
+     "0x40037b7a",
+     8
+    ],
+    [
+     "hex",
+     "7cfc4a00670000de103900000000718055804a8067000132420613c60000000020794199ec384a88670000ba267c0001ec594284d7c810133a394199ecc22c7c0001ec5a2a7c0001ec54ddc8287c0001ec55dbc8d9c841e8038b227c4199ec8271807bc526407001b08b6700008c1416247c4018ed2020394199ec5c12151614750224322c004a826f0000fc4c020800738177832e02e189244045f228ff8283260a4c4238034c0378002c0390876b444a8167044c41380632867401e9aa334000204a806f0000a88a825284548941e8038f7010b084668e2005"
+    ],
+    [
+     "stock",
+     "0x400035ea",
+     10
+    ],
+    [
+     "hex",
+     "2a2f00302005"
+    ],
+    [
+     "stock",
+     "0x400035ea",
+     10
+    ],
+    [
+     "hex",
+     "d08260b82c0b1410267c4018ed2020394199ec5c1228fffd1628fffe750224332c004a826f00008826467c064c060800738177832e02e189244045f228ff8283260a4c4238034c0378002c0390876a00ff6c60ac4206203900000000528023c00000000013c60000000020794199ec384a886600fec46000ff784682ca825284548941e8038f7010b0846600fee66000ff545284548941e8038f7010b0846600feda2005"
+    ],
+    [
+     "stock",
+     "0x400035ea",
+     10
+    ],
+    [
+     "hex",
+     "5284548941e8038f"
+    ],
+    [
+     "stock",
+     "0x400ac0b2",
+     8
+    ],
+    [
+     "hex",
+     "2005"
+    ],
+    [
+     "stock",
+     "0x400035ea",
+     10
+    ],
+    [
+     "hex",
+     "000001010000"
+    ]
+   ]
+  },
+  ".bss": {
+   "align": 4,
+   "size": 5
+  }
+ },
+ "symbols": {
+  "CHECKBOXES": [
+   "abs",
+   1109363260
+  ],
+  "BLIT": [
+   "abs",
+   1074539400
+  ],
+  "INVALIDATE": [
+   "abs",
+   1074567738
+  ],
+  "STR_CTOR": [
+   "abs",
+   1075293984
+  ],
+  "DJ_ARMED_RET": [
+   "abs",
+   1074205304
+  ],
+  "SQ_LEN_OVR": [
+   "abs",
+   1100606796
+  ],
+  "SQ_PENDING": [
+   "abs",
+   1100606658
+  ],
+  "dj_row": [
+   ".run",
+   480
+  ],
+  "dj_row2": [
+   ".run",
+   496
+  ],
+  "dj_label": [
+   ".run",
+   122
+  ],
+  "dj_str": [
+   ".run",
+   512
+  ],
+  "dj_select": [
+   ".run",
+   160
+  ],
+  "dj_change": [
+   ".run",
+   202
+  ],
+  "dj_draw": [
+   ".run",
+   244
+  ],
+  "dj2_label": [
+   ".run",
+   300
+  ],
+  "dj_str2": [
+   ".run",
+   524
+  ],
+  "dj2_select": [
+   ".run",
+   338
+  ],
+  "dj2_change": [
+   ".run",
+   380
+  ],
+  "dj2_draw": [
+   ".run",
+   422
+  ],
+  "dj_jumped": [
+   ".bss",
+   4
+  ],
+  "dj_settings": [
+   ".run",
+   88
+  ],
+  "dj_site_switch": [
+   ".run",
+   52
+  ],
+  "dj_peek": [
+   ".run",
+   540
+  ],
+  "dj_data": [
+   ".run",
+   1688
+  ],
+  "dj_starts": [
+   ".bss",
+   0
+  ],
+  "dj_site_peek": [
+   ".run",
+   0
+  ],
+  "dj_switched": [
+   ".run",
+   1228
+  ]
+ },
+ "exports": [
+  "dj_data",
+  "dj_peek",
+  "dj_settings",
+  "dj_site_peek",
+  "dj_site_switch",
+  "dj_starts",
+  "dj_switched"
+ ],
+ "imports": [
+  "core_additem"
+ ],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   24,
+   "abs32",
+   "sec:.run",
+   540
+  ],
+  [
+   ".run",
+   64,
+   "abs32",
+   "sec:.run",
+   1228
+  ],
+  [
+   ".run",
+   98,
+   "abs32",
+   "sym:core_additem",
+   0
+  ],
+  [
+   ".run",
+   114,
+   "abs32",
+   "sym:core_additem",
+   0
+  ],
+  [
+   ".run",
+   170,
+   "abs32",
+   "sec:.run",
+   1688
+  ],
+  [
+   ".run",
+   184,
+   "abs32",
+   "sec:.run",
+   1688
+  ],
+  [
+   ".run",
+   224,
+   "abs32",
+   "sec:.run",
+   1688
+  ],
+  [
+   ".run",
+   248,
+   "abs32",
+   "sec:.run",
+   1688
+  ],
+  [
+   ".run",
+   348,
+   "abs32",
+   "sec:.run",
+   1689
+  ],
+  [
+   ".run",
+   362,
+   "abs32",
+   "sec:.run",
+   1689
+  ],
+  [
+   ".run",
+   402,
+   "abs32",
+   "sec:.run",
+   1689
+  ],
+  [
+   ".run",
+   426,
+   "abs32",
+   "sec:.run",
+   1689
+  ],
+  [
+   ".run",
+   480,
+   "abs32",
+   "sec:.run",
+   122
+  ],
+  [
+   ".run",
+   484,
+   "abs32",
+   "sec:.run",
+   160
+  ],
+  [
+   ".run",
+   488,
+   "abs32",
+   "sec:.run",
+   244
+  ],
+  [
+   ".run",
+   492,
+   "abs32",
+   "sec:.run",
+   202
+  ],
+  [
+   ".run",
+   496,
+   "abs32",
+   "sec:.run",
+   300
+  ],
+  [
+   ".run",
+   500,
+   "abs32",
+   "sec:.run",
+   338
+  ],
+  [
+   ".run",
+   504,
+   "abs32",
+   "sec:.run",
+   422
+  ],
+  [
+   ".run",
+   508,
+   "abs32",
+   "sec:.run",
+   380
+  ],
+  [
+   ".run",
+   578,
+   "abs32",
+   "sec:.run",
+   1688
+  ],
+  [
+   ".run",
+   588,
+   "abs32",
+   "sec:.run",
+   1689
+  ],
+  [
+   ".run",
+   884,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1230,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1250,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1268,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   1572,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   1580,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   1586,
+   "abs32",
+   "sec:.bss",
+   4
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x40070e26",
+   "len": 6,
+   "stock_sha256": "bcdc4d8d685bd67ef4b9057e6585432cd16f1f891e0f0d8b5d6bc17dba2a80e8",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dj_site_peek",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4007124e",
+   "len": 6,
+   "stock_sha256": "9e119e75603c4a1bc0ec385ac38aaa2e4970e58f1af97114598ed0dd93641f8f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dj_site_switch",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [
+  {
+   "to": "ev_settings",
+   "order": 60,
+   "data": "00000000",
+   "relocs": [
+    [
+     0,
+     "abs32",
+     "sym:dj_settings",
+     0
+    ]
+   ],
+   "claims": []
+  }
+ ],
+ "copied": [],
+ "resources": {
+  "names": [
+   "settings:DIRECT JUMP",
+   "settings:START ON BAR"
+  ]
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "djsites.s": "6532bc776925e2b79fc070988321ff793aec945426801bc559d0b6d0ea0ed3ff",
+   "directjump.c": "913b1a09473ee46890c91c9f1d63441f9c527877c0f51a9d2e43e4f50b4f1cb8"
+  }
+ },
+ "signature": null
+}
