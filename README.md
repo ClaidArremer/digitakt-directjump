@@ -85,8 +85,8 @@ works each track's step out again after a jump (site B), as on the Digitone.
   per-track mode at mixed speeds and lengths; a tick-by-tick timeline of 14,112 starts, each on a bar line, and
   2,016 relaunches, each on a beat.
 - On a unit (Robbie's Digitakt mk1, OS 1.54, with the mods above): legato jumps mid-pattern, relaunches of the
-  playing pattern on the beat, starts of another pattern on the bar (DIRECT JUMP unticked), and per-track
-  patterns all play in time.
+  playing pattern on the beat, starts of another pattern on the bar (DIRECT JUMP unticked), per-track
+  patterns, and DIGISNAKE-DT 0.3's snakes relaunching with a start all play in time.
 
 ## Building
 
